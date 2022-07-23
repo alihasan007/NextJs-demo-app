@@ -18,8 +18,6 @@ async function handler(req, res) {
     const result = await MeetupsCollection.insertOne(data);
     console.log(result);
     client.close();
-
-    client.close();
     res.status(201).json({ message: "meetup inserted !!" });
   }
 }
